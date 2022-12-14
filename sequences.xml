@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hash>
+<seq>1 2 3 4 2 3 5 4 6 7 4 8 9 2 2 4 6</seq>
+<subseq>1 2 3 4, 2 3 5, 4 6 7, 4 8 9, 2 2 4 6</subseq>
+<maxseq>1 2 3 4</maxseq>
+</hash>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LR10</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+  <body>
+  <br/><br/>
+  <div class = "container">
+    <% flash.each do |type, msg| %>
+      <div class='alert alert-info'>
+        <%= msg %>
+      </div>
+    <% end %>
+    <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<h3>Задание:</h3> Написать программу, которая вводит цепочку целых чисел (количество
+чисел не менее 10) и определяет наиболее длинную монотонно возрастающую их последовательность.
+</br>Вывести на печать введенную цепочку, все
+найденные последовательности и наиболее длинную из них. При программировании использовать функцию.
+<h4>Ввод</h4>
+<%= form_with url: "sequences/result", data: {turbo: false}, method: :get do |form| %>
+  <p><%= form.label :query, "Введите цепочку целых чисел (количество
+  чисел не менее 10):" %></p>
+  <p><%= form.text_field(:num, {:class => 'form-control'}) %></p>
+  <%= form.radio_button :side, 'xml' %> XML-format
+  <%= form.radio_button :side, 'html' %> HTML-format
+   <%= form.radio_button :side, 'server' %> SERVER
+  <p><%= form.submit "Найти" %></p>
+<% end %>
